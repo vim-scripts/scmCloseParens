@@ -1,0 +1,22 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1885
+
+Lets you easily close all open parens up to the cursor line.
+
+I tested it quickly with Scheme, but it should also work with Lisp.
+
+(define foo
+  (lambda(x)
+    (+ x 1
+
+Put your cursor on the last line (or below), and type <Leader>p
+It will become
+
+(define foo
+  (lambda(x)
+    (+ x 1)))
+
+I chose "p" as in "parens", for it is easy to remember. I would have preferred "c" as in "close", but <leader>c is already taken by the good EnhancedCommentify :D
+
+
+I apologize for this script beeing a dirty quick hack, but writing in vim's script language is a real pain, and this script is enough useful to me to choose to share it.
+I should at least clean it by the following weeks.
